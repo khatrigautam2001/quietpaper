@@ -1,0 +1,308 @@
+/* Big tablet t0 smaller laptop screens */
+@media (max-width:1200px){
+    .about-para{
+        margin-bottom: 20px;
+    }
+    
+    .section-heading,
+    .testimonial-heading,
+    .packages-heading,
+    .contact-heading{
+        margin-top: 90px;
+    }
+}
+
+
+/* smaller tablet to larger tablet screens */
+@media (max-width:1023px){
+    .row{
+        padding: 0 1%;
+    }  
+    .about-box{
+        margin-top: 60px;
+    }
+    .about-box:first-child{
+        padding: 0;
+        /* padding-left: 5%; */
+    }
+    .laptop-image{
+        padding-right: 5%;
+    }
+    .package-box{
+        width: 90%;
+    }
+    .package-heading{
+        margin-bottom: 25px;
+    }
+
+    footer{
+        padding: 30px;
+    }
+
+    footer p{
+        margin-top: 20px;
+        line-height: 1.3;
+    }
+}
+
+
+/* larger phones to smaller tablet screens */
+@media (max-width:767px){
+    html,body{
+        font-size: 10px;
+    }
+
+    .header-text-box{
+        margin-bottom: 50px;
+    }
+
+    .about-heading{
+        margin-bottom: 20px;
+    }
+
+    .section-heading,
+    .testimonial-heading,
+    .packages-heading,
+    .contact-heading{
+        margin-top: 60px;
+    }
+
+    .section-heading{
+        margin-bottom: 10px;
+    }
+
+    .section-sub-heading::after{
+        margin: 15px auto 0 auto;
+    }
+
+    .testimonial-heading{
+        margin-bottom: 10px;
+    }
+    
+    
+}
+
+
+/* smaller to large mobile phones */
+@media (max-width:480px){
+    /* New CSS */
+    .para-heading{
+        margin-top: -20%;
+    }
+
+
+    
+    .laptop-image{
+        padding: 0;
+        padding-left: 6%;
+        margin: 0 auto;
+    }
+
+    /* .about-section{
+        text-align: center;
+    } */
+
+    .about-box{
+        text-align: center;
+    }
+
+    .about-box:last-child{
+        text-align: center;
+    }
+
+    .about-box:first-child{
+        text-align: center;
+    }
+
+    .services-grid{
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+
+    .span_1_of_4{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .span_1_of_3{
+        padding: 0 10%;
+        margin-bottom: 5px;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+
+    .contact-label{
+        padding-left: 0;
+        font-size: 140%;
+    }
+
+    .footer-nav,
+    .social-links{
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .work-portfolio li{
+        width: 50%;
+    }
+
+    /**** Hamburger Button ****/
+    #menuToggle
+    {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+    }
+
+    #menuToggle a
+    {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover
+    {
+    color: tomato;
+    }
+
+
+    #menuToggle input
+    {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+    }
+
+
+    #menuToggle span
+    {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #EC4AB7;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child
+    {
+    transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+    transform-origin: 0% 100%;
+    }
+
+
+    #menuToggle input:checked ~ span
+    {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+    }
+
+
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+
+
+    #menu
+    {
+    position: absolute;
+    width: 390px;
+    margin: -100px 0 0 -370px;
+    padding: 100px;
+    padding-top: 125px;
+    border-radius: 30px;
+    
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    opacity: 0.9;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li
+    {
+    padding: 10px 0;
+    font-size: 22px;
+    }
+
+
+    /* #menuToggle input:checked ~ ul
+    {
+    transform: none;
+    } */
+
+    .show {
+		transform: none !important;
+	}
+
+    .hamburgerBtn{
+        border: none;
+        background: transparent;
+        font-size: 25px;
+        right: -10px;
+        top: -10px;
+    }
+    .fa-bars{
+        color: #0B3B2D;
+    }
+    .fa-times{
+        color: #555;
+    }
+    
+}
+
+
+@media (min-width:481px){
+    .hamburgerBtn{
+        display: none;
+    }
+}
